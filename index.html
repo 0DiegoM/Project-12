@@ -11,24 +11,37 @@
 <body>
     <center>
 <h1> Lista de invitados </h1>
-
+<div id="Rows">  </div>
     <input
           type="text"
           placeholder="Ingresar Nombre"  
         id="lista_de_invitados_ingresar">
-        <button onclick="Sumbit()">Enviar</button>
-<div id="lista_de_invitados_ingresar">  </div>
+        <button onclick="sumbit_send()" id="Sumbit_button"> Enviar </button>
+        <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<div id="lista_de_invitados_ingresar_1"></div>
 <br>
 <br>
+<div id="show"> 
+
+
         <h1> Lista de invitados </h1>
-<button onclick=""> Mostrar </button>
+<button onclick="Show()" id="Show"> Mostrar </button>
+<p id="p1">  </p>
+</div>
 <br>
 <br>
+<button onclick="Sort()" id="Sort_button"> Lista ordenada </button>
+<br>
+<br>
+<div id="Sort_list">  </div>
     <input
           type="text"
           placeholder="Buscar Nombre"  
         id="lista_de_invitados_buscar">
-        <button onclick="searching()"> Enviar </button>
+        <button onclick="searching()" id="search"> Enviar </button>
+    <br>
+    <br>
+        <p id="searched">  </p>
     </center>
 </body>
 </html>
